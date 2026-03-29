@@ -54,8 +54,7 @@ unsigned int faStr2(const char* str) {
             inWord = false;
             correct = true;
             charIndex = 0;
-        }
-        else {
+        } else {
             if (!inWord) {
                 inWord = true;
                 correct = true;
