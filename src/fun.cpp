@@ -20,8 +20,7 @@ unsigned int faStr1(const char* str) {
             }
             inWord = false;
             hasNum = false;
-        }
-        else {
+        } else {
             if (!inWord) {
                 inWord = true;
                 hasNum = false;
@@ -66,8 +65,7 @@ unsigned int faStr2(const char* str) {
                 if (!(ch >= 'A' && ch <= 'Z')) {
                     correct = false;
                 }
-            }
-            else {
+            } else {
                 if (!(ch >= 'a' && ch <= 'z')) {
                     correct = false;
                 }
@@ -99,8 +97,7 @@ unsigned int faStr3(const char* str) {
                 inWord = false;
                 currentLen = 0;
             }
-        }
-        else {
+        } else {
             if (!inWord) {
                 inWord = true;
                 currentLen = 0;
@@ -113,6 +110,6 @@ unsigned int faStr3(const char* str) {
         count++;
     }
     if (count == 0) return 0;
-    double averageLen = (double)totalLen / count;
+    double averageLen = static_cast<double>(totalLen) / count;
     return (unsigned int)std::round(averageLen);
 }

@@ -1,6 +1,6 @@
 // Copyright 2022 UNN-IASR
-#include "fun.h"
 #include <iostream>
+#include "fun.h"
 
 int main() {
     const char* str1 = "Hello World! What i6 the weather5676 like 574today?";
